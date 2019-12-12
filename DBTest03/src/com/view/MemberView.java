@@ -131,7 +131,7 @@ public class MemberView {
 				updateDto.setTel(updateTel);
 				updateDto.setEmail(updateEmail);
 				
-				int updateRes = biz.insert(updateDto);
+				int updateRes = biz.update(updateDto);
 				if(updateRes > 0) {
 					System.out.println(updateRes + "개 UPDATE 성공!");
 				} else {
